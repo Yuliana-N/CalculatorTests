@@ -14,7 +14,7 @@ public class DivisionTests {
     }
 
     @Parameters({"a", "b", "result"})
-    @Test(expectedExceptions = {ArithmeticException.class}, priority = 1)
+    @Test( priority = 1)
     public void subtractionTestParametersFromXML(@Optional("0") double a, @Optional("0") double b, @Optional("0") double result) {
         double division = calculator.division(a, b);
         assertEquals(division, result, "Деление рабоатет не корректно");

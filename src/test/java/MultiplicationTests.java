@@ -14,7 +14,7 @@ public class MultiplicationTests {
     }
 
     @Parameters({"a", "b", "result"})
-    @Test(expectedExceptions = {ArithmeticException.class}, priority = 1)
+    @Test(priority = 1)
     public void multiplyTestParametersFromXML(@Optional("0") double a, @Optional("0") double b, @Optional("0") double result) {
         double multiply = calculator.multiply(a, b);
         assertEquals(multiply, result, "Умножние рабоатет не корректно");
