@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Test suite Calculator" parallel="tests">
+    <test name="Check Addition ">
+        <classes>
+            <class name="AdditionTests"/>
+        </classes>
+    </test>
+    <test name="Check Subtraction">
+        <classes>
+            <class name="SubtractionTests"/>
+            <parameter name="a" value="2"></parameter>
+            <parameter name="b" value="1"></parameter>
+            <parameter name="result" value="1"></parameter>
+        </classes>
+    </test>
+    <test name="Check Division">
+        <classes>
+            <class name="DivisionTests"/>
+            <parameter name="a" value="4"></parameter>
+            <parameter name="b" value="2"></parameter>
+            <parameter name="result" value="2"></parameter>
+        </classes>
+    </test>
+    <test name="Check Multiplication">
+        <classes>
+            <class name="MultiplicationTests"/>
+            <parameter name="a" value="1"></parameter>
+            <parameter name="b" value="2"></parameter>
+            <parameter name="result" value="2"></parameter>
+        </classes>
+    </test>
+</suite>
